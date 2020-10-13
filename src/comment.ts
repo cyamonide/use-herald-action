@@ -88,6 +88,8 @@ const getAllComments = async (
     page,
   });
 
+  debug('SL_DEBUG comments retrieved:', comments);
+
   if (comments.length < maxPerPage) {
     return comments;
   } else {
